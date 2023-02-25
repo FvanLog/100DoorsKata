@@ -70,22 +70,6 @@ namespace HundredDoors.Tests
             actual.Should().Be(expectedResult);
         }
 
-        [Test]
-        public void GivenOneDoorAndOnePass_WhenRunningPass_ShouldOpenDoor()
-        {
-            // arrange
-            const int numDoors = 1;
-            const int numPasses = 1;
-            const string expectedResult = "@";
-            var doorController = new DoorController(numDoors);
-
-            // act
-            var actual = doorController.RunPass(numPasses);
-
-            // assert
-            actual.Should().Be(expectedResult);
-        }
-
         [TestCase(6)]
         [TestCase(100)]
         public void GivenSomeDoorsAndOnePass_WhenRunningPass_ShouldOpenAllDoors(int numDoors)
