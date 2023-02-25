@@ -105,7 +105,6 @@ namespace HundredDoors.Tests
 
             // assert
             actual.Should().Be(expectedResult);
-
         }
 
         [Test]
