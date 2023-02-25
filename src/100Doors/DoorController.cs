@@ -51,7 +51,7 @@ namespace HundredDoors
 
             foreach (var door in Doors)
             {
-                sb.Append(door.IsOpen ? "@" : "#");
+                sb.Append(door.GetState());
             }
 
             return sb.ToString();
